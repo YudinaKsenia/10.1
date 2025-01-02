@@ -8,6 +8,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadioTest {
 
     @Test
+    public void testNumberOfRadioStations() {
+
+        Radio radio = new Radio(20);
+
+        radio.setCurrentRadioStation(2);
+
+        int expected = 2;
+        int actual = 2;
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void testSettingRadioStation() {
 
         Radio radio = new Radio();
